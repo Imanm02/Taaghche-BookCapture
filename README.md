@@ -14,32 +14,22 @@ BookCapture-PDFConverter is an automated toolkit designed to streamline the proc
 - **Image Cropping & Renaming:** Sequential renaming and customizable cropping of screenshots.
 - **PDF Conversion:** Conversion of processed images into a single PDF.
 
-### 1. Screenshot Capture Script
+### 1. Screenshot Capture
+- Open the book on Taaghche.com and navigate to the page where you want to start capturing.
+- Run the script:  
+  `python screenshot_capture.py`
+- Quickly switch back to the book view. The script will start capturing screenshots after a 5-second delay.
 
-This script automates the process of taking screenshots of each page of a book. It saves each screenshot as a JPEG file in a designated folder.
+### 2. Image Cropping & Renaming
+- After capturing all the screenshots, run the following script to rename and crop the images:  
+  `python image_process_rename.py`
+- The script will process all images in the current directory, renaming them sequentially and preparing them for PDF conversion.
 
-**Usage:**
+### 3. PDF Conversion
+- To convert the processed images into a single PDF, run:  
+  `python pdf_conversion.py`
+- The script will create an 'output' directory within each image folder and save the final PDF there.
 
-- Run `python screenshot_capture.py`
-- Ensure the book is open and positioned correctly on your screen.
-- The script will automatically take screenshots and save them.
-
-### 2. Image Cropping & Renaming Script
-
-This script renames the captured image files sequentially and crops them to a specified size.
-
-**Usage:**
-
-- Run `python image_process_rename.py`
-- The script will rename and crop the images based on predefined dimensions.
-
-### 3. PDF Conversion Script
-Converts the processed images into a single, organized PDF document.
-
-**Usage:**
-
-- Run `python pdf_conversion.py`
-- This will combine all images into a PDF, saved in the specified output directory.
 
 ## Prerequisites
 
