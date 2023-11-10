@@ -24,3 +24,6 @@ This script renames the captured image files sequentially and crops them to a sp
 **Usage:**
 - Run `python image_process_rename.py`
 - The script will rename and crop the images based on predefined dimensions.
+
+### 3. PDF Conversion Script
+Converts the processed images into a single, organized PDF document.
