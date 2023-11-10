@@ -23,4 +23,5 @@ def rename_and_prepare_images():
             index_map[f_type] = next_index
 
 if __name__ == "__main__":
+    # Run the renaming and preparation function
     rename_and_prepare_images()
