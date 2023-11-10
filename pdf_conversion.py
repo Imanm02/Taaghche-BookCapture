@@ -14,9 +14,11 @@ def convert_images_to_pdf():
         output_dir = os.path.join(path, "output")
         os.makedirs(output_dir, exist_ok=True)
 
-        # Define ImageMagick commands
+        # Define the command to crop images using ImageMagick's 'mogrify'
         crop_command = f"mogrify -path \"{output_dir}\" -crop 1672x789+124+197 \"{path}\"/*.jpg"
+        # Define the command to convert cropped images to a PDF using ImageMagick's 'convert'
         convert_command = f"convert \"{output_dir}/*.jpg\" \"{output_dir}/{name}.pdf\""
+
 
         # Execute commands
         subprocess.run(crop_command, shell=True)
