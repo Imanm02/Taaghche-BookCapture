@@ -27,3 +27,7 @@ This script renames the captured image files sequentially and crops them to a sp
 
 ### 3. PDF Conversion Script
 Converts the processed images into a single, organized PDF document.
+
+**Usage:**
+- Run `python pdf_conversion.py`
+- This will combine all images into a PDF, saved in the specified output directory.
