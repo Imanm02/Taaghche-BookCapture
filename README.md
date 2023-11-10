@@ -33,6 +33,11 @@ BookCapture-PDFConverter is an automated toolkit designed to streamline the proc
   `python pdf_conversion.py`
 - The script will create an 'output' directory within each image folder and save the final PDF there.
 
+### Notes
+- Adjust the coordinates in `screenshot_capture.py` if the mouse does not accurately click the 'next page' button.
+- Ensure the `book` folder in `screenshot_capture.py` exists or adjust the path as needed.
+- The number of pages (400 in the script) can be adjusted based on the book length.
+- ImageMagick commands in `pdf_conversion.py` might need adjustments based on your OS and ImageMagick configuration.
 
 ## Prerequisites
 
