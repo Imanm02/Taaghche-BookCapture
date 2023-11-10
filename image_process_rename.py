@@ -11,10 +11,15 @@ def rename_and_prepare_images():
             if file.endswith(".py"):
                 continue
 
+            # Extract the file extension
             f_type = file.split('.')[-1].lower()
+            # Increment the index for this file type
             next_index = index_map.get(f_type, 0) + 1
+            # Create a new filename with a padded index number
             new_name = f"{next_index:04d}.{f_type}"
+            # Rename the file to the new name
             os.rename(os.path.join(path, file), os.path.join(path, new_name))
+            # Update the index map
             index_map[f_type] = next_index
 
 if __name__ == "__main__":
