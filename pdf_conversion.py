@@ -19,9 +19,9 @@ def convert_images_to_pdf():
         # Define the command to convert cropped images to a PDF using ImageMagick's 'convert'
         convert_command = f"convert \"{output_dir}/*.jpg\" \"{output_dir}/{name}.pdf\""
 
-
-        # Execute commands
+        # Execute the cropping command
         subprocess.run(crop_command, shell=True)
+        # Execute the conversion command
         subprocess.run(convert_command, shell=True)
 
 if __name__ == "__main__":
