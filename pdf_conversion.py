@@ -25,4 +25,5 @@ def convert_images_to_pdf():
         subprocess.run(convert_command, shell=True)
 
 if __name__ == "__main__":
+    # Run the function to convert images to PDF
     convert_images_to_pdf()
