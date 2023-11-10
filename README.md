@@ -42,7 +42,7 @@ Converts the processed images into a single, organized PDF document.
 ## Prerequisites
 
 - Python
-- Libraries: `pyautogui`, `subprocess`, [other required libraries]
+- Libraries: `pyautogui`, `subprocess`
 - ImageMagick installed for image processing and PDF conversion.
 
 ## Maintainer
