@@ -12,3 +12,11 @@ BookCapture-PDFConverter is an automated toolkit designed to streamline the proc
 
 ### 1. Screenshot Capture Script
 This script automates the process of taking screenshots of each page of a book. It saves each screenshot as a JPEG file in a designated folder.
+
+**Usage:**
+- Run `python screenshot_capture.py`
+- Ensure the book is open and positioned correctly on your screen.
+- The script will automatically take screenshots and save them.
+
+### 2. Image Cropping & Renaming Script
+This script renames the captured image files sequentially and crops them to a specified size.
