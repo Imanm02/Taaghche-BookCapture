@@ -2,9 +2,11 @@ import os
 import subprocess
 
 def convert_images_to_pdf():
+    # Walk through all files in the current directory and its subdirectories
     for path, subdirs, files in os.walk('.'):
+        # Skip directories that contain subdirectories
         if subdirs:
-            continue  # Skip directories with subdirectories
+            continue
 
         name = os.path.basename(path)
         output_dir = os.path.join(path, "output")
