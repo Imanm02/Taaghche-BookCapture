@@ -31,3 +31,8 @@ Converts the processed images into a single, organized PDF document.
 **Usage:**
 - Run `python pdf_conversion.py`
 - This will combine all images into a PDF, saved in the specified output directory.
+
+## Prerequisites
+- Python
+- Libraries: `pyautogui`, `subprocess`, [other required libraries]
+- ImageMagick installed for image processing and PDF conversion.
