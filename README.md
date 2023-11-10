@@ -20,3 +20,7 @@ This script automates the process of taking screenshots of each page of a book. 
 
 ### 2. Image Cropping & Renaming Script
 This script renames the captured image files sequentially and crops them to a specified size.
+
+**Usage:**
+- Run `python image_process_rename.py`
+- The script will rename and crop the images based on predefined dimensions.
