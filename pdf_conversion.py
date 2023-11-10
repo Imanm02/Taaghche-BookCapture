@@ -8,7 +8,9 @@ def convert_images_to_pdf():
         if subdirs:
             continue
 
+        # Get the name of the current directory
         name = os.path.basename(path)
+        # Create an output directory within the current directory
         output_dir = os.path.join(path, "output")
         os.makedirs(output_dir, exist_ok=True)
 
