@@ -1,9 +1,13 @@
 import os
 
 def rename_and_prepare_images():
+    # Walk through all files in the current directory and its subdirectories
     for path, subdirs, files in os.walk('.'):
+        # Dictionary to keep track of the last index used for each file type
         index_map = {}
+        # Process files in alphabetical order
         for file in sorted(files):
+            # Skip Python script files
             if file.endswith(".py"):
                 continue
 
