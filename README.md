@@ -10,8 +10,5 @@ BookCapture-PDFConverter is an automated toolkit designed to streamline the proc
 - **Image Cropping & Renaming:** Sequential renaming and customizable cropping of screenshots.
 - **PDF Conversion:** Conversion of processed images into a single PDF.
 
-## Getting Started
-To use this toolkit, follow these steps:
-1. Clone the repository: `git clone https://github.com/yourusername/BookCapture-PDFConverter.git`
-2. Navigate to the project directory: `cd BookCapture-PDFConverter`
-3. [Instructions on setting up and running the scripts]
+### 1. Screenshot Capture Script
+This script automates the process of taking screenshots of each page of a book. It saves each screenshot as a JPEG file in a designated folder.
